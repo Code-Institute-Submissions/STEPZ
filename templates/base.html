@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4  my-auto  and py-lg-0 text-center text-lg-left">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
                             placeholder="Search our site">
@@ -70,7 +70,7 @@
             <div class="col-12 col-lg-4  my-auto  and py-lg-0 text-center text-lg-left">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
+                        <a class="text-black nav-link" href="{% url 'products' %}">
                         <div>
                             <div> <i class="fas fa-store fa-lg "></i></div>
                             <p class="my-0"> Shop</p>
