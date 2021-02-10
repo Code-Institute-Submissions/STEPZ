@@ -8,6 +8,15 @@ body{
     margin: 0;
 }
 
+.fa-shopping-bag, .fa-user, .fa-store{
+ color:black;   
+}
+
+.text-black {
+    color: rgb(85, 78, 78) !important;
+}
+
+
 /*fonts */
 h1{
     font-family:Roboto,sans-serif;
