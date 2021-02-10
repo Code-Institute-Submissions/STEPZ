@@ -38,7 +38,6 @@ class Price_list (models.Model):
          return '{}, {}'.format(self.name, self.product_id)
 
 
-
 class Colours (models.Model):
 
     class Meta:
@@ -63,6 +62,7 @@ class Colours (models.Model):
     def __str__(self):
         return '{}, {}'.format(self.name, self.product_id)
 
+
 class Product(models.Model):
 
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
@@ -74,8 +74,6 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
-
-
     def __str__(self):
-         return '{}, {}'.format(self.name, self.price_list)
+         return '{}, {}'.format(self.name)
 
