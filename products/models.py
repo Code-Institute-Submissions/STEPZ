@@ -53,7 +53,9 @@ class Colours (models.Model):
         ('Yellow','Yellow'),
         ('Orange','Orange'),
         ('Purple','Purple'),
-         ('Green','Green'),
+        ('Green','Green'),
+        ('Pink','Pink'),
+        ('Gray','Gray'),
     )
 
     name = MultiSelectField(choices=colour_choices, null=True)
