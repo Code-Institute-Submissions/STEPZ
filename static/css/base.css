@@ -7,3 +7,28 @@ html {
 body{
     margin: 0;
 }
+
+/*fonts */
+h1{
+    font-family:Roboto,sans-serif;
+    font-weight: bold;
+    color: #76cf95;
+    font-size: 3.5rem;
+}
+
+h2, h3{
+    font-family:lato,sans-serif;
+    font-weight: lighter;
+    color:rgb(85, 78, 78);
+    font-size: 3rem;
+    padding: 40px;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    margin: 0;
+    float: left
+}
