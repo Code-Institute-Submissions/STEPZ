@@ -5,7 +5,6 @@ from .models import Product, Category, Price_list, Colours
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'name',
         'category',
         'price',
@@ -22,6 +21,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class Price_listAdmin(admin.ModelAdmin):
     list_display = (
         'name',
+        'product_id',
     )
 
 

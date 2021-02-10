@@ -31,8 +31,8 @@ class Price_list (models.Model):
         ('over_300','over_300'),
     )
 
-    product_id = models.ForeignKey('Product', null=True,blank=True, on_delete=models.SET_NULL)
     name =MultiSelectField(choices=price_choices, null=True)
+    product_id = models.ForeignKey('Product', null=True,blank=True, on_delete=models.SET_NULL)
 
     def __str__(self):
          return '{}, {}'.format(self.name, self.product_id)
@@ -75,5 +75,5 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-         return '{}, {}'.format(self.name)
+        return self.name
 
