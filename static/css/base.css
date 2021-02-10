@@ -33,6 +33,21 @@ h2, h3{
     float: left
 }
 
+*shop button*/
+.shop-button{
+    background-color:black;
+    margin-bottom: 10px;
+}
+.shop-link
+{
+    color: white;
+    font-family: lato,sans-serif ;
+    padding: 15px;
+}
+a:hover {
+    color: white;
+    text-decoration:none;
+}
  /* fixed top navbar only on medium and up */
 @media (min-width: 768px) and (max-width: 991.98px){ 
     
