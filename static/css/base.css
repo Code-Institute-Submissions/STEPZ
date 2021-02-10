@@ -33,7 +33,16 @@ h2, h3{
     float: left
 }
 
-*shop button*/
+/*images */
+.home-image{
+    width: 100%;
+ }
+
+ .border-black{
+     color: black !important;
+ }
+
+/*shop button*/
 .shop-button{
     background-color:black;
     margin-bottom: 10px;
