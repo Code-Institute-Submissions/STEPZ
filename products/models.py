@@ -49,7 +49,6 @@ class Colours (models.Model):
         ('White','White'),
         ('Red','Red'),
         ('Blue','Blue'),
-        ('Pink','brown'),
         ('Yellow','Yellow'),
         ('Orange','Orange'),
         ('Purple','Purple'),
