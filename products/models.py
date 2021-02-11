@@ -31,7 +31,7 @@ class Price_list (models.Model):
         ('over_300','over_300'),
     )
 
-    name =MultiSelectField(choices=price_choices, null=True)
+    name = MultiSelectField(choices=price_choices, null=True)
     product_id = models.ForeignKey('Product', null=True,blank=True, on_delete=models.SET_NULL)
 
     def __str__(self):
