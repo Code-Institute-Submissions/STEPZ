@@ -76,44 +76,41 @@
         </div>
         <!--Price filter-->
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <form  method="GET" action="{% url 'products' %}">
-                <div class="card-body">
-                    <select class="selectpicker form-inline border rounded p-sm-2 my-2" multiple data-live-search="true" name="price+filter">
-                        <option value="" selected></option>
-                           
-						        <option value=""></option>
-                                  
-					</select> 
-            <!---
-                    <a href="">
-                        <div class="form-inline border rounded p-sm-2 my-2">
-                            <label for="over_100" class="pl-1 pt-sm-0 pt-1">Over
-                                $100</label>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="form-inline border rounded p-md-2 p-sm-1">
-                            <label for="over_150" class="pl-1 pt-sm-0 pt-1">over
-                                to $150</label>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="form-inline border rounded p-md-2 p-sm-1">
-                            <label for="over_200" class="pl-1 pt-sm-0 pt-1">over $200</label>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="form-inline border rounded p-md-2 p-sm-1">
-                            <label for="over_250" class="pl-1 pt-sm-0 pt-1">over $250</label>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="form-inline border rounded p-md-2 p-sm-1">
-                            <label for="over_300" class="pl-1 pt-sm-0 pt-1">over $300</label>
-                        </div>
-                    </a> -->
-                </div>
-            </form>
+            <div class="card-body">
+                <a href="{% url 'products' %}?PriceList=over_50">
+                    <div class="form-inline border rounded p-sm-2 my-2">
+                        <label for="over_50" class="pl-1 pt-sm-0 pt-1">Over
+                            $50</label>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="form-inline border rounded p-sm-2 my-2">
+                        <label for="over_100" class="pl-1 pt-sm-0 pt-1">Over
+                            $100</label>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="form-inline border rounded p-md-2 p-sm-1">
+                        <label for="over_150" class="pl-1 pt-sm-0 pt-1">over
+                            to $150</label>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="form-inline border rounded p-md-2 p-sm-1">
+                        <label for="over_200" class="pl-1 pt-sm-0 pt-1">over $200</label>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="form-inline border rounded p-md-2 p-sm-1">
+                        <label for="over_250" class="pl-1 pt-sm-0 pt-1">over $250</label>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="form-inline border rounded p-md-2 p-sm-1">
+                        <label for="over_300" class="pl-1 pt-sm-0 pt-1">over $300</label>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <!--Colour filter-->
