@@ -1,4 +1,40 @@
 {% load static %}
 {% block content %}
 
+	<div class="side-bar">
+		<div class="col-lg-4 col-xl-3">
+			<form method="GET" action="">
+				<div class="mb-4">
+					<div class="aside-title">Categories</div>
+					<select class="selectpicker mt-2" multiple data-live-search="true" name="filter_category">
+                           
+						        <option value="" selected></option>
+                           
+						        <option value=""></option>
+                           
+					</select>
+				</div>
+				<div class="mb-4">
+					<div class="aside-title">Color</div>
+					<select class="selectpicker mt-2" multiple data-live-search="true" name="">
+                
+        						<option value="" selected></option>
+                           
+						        <option value=""></option>
+                            
+					</select>
+				</div>
+				<div class="mb-4">
+					<div class="aside-title">Flower</div>
+					<select class="selectpicker mt-2" multiple data-live-search="true"  name="">
+                      
+        						<option value="" selected></option>
+                                                   
+						        <option value=""></option>
+    
+					</select>
+				</div>
+            </form>
+        </div>
+
 {% endblock %}
