@@ -12,6 +12,7 @@ def all_products(request):
     query = None
     categories = None
 
+
     if 'categories' in request.GET:
         categories = request.GET['categories'].split(',')
         products = products.filter(category__name__in=categories)
@@ -30,7 +31,6 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-
     }
 
     return render(request, 'products/products.html', context)

@@ -16,28 +16,6 @@ class Category (models.Model):
     def __str__(self):
         return self.name
 
-
-class Price_list (models.Model):
-
-    class Meta:
-        verbose_name_plural = 'PriceList'
-
-    price_choices = (
-        ('over_50','over_50'),
-        ('over_100','over_100'),
-        ('over_150','over_150'),
-        ('over_200','over_200'),
-        ('over_250','over_250'),
-        ('over_300','over_300'),
-    )
-
-    name = MultiSelectField(choices=price_choices, null=True)
-    product_id = models.ForeignKey('Product', null=True,blank=True, on_delete=models.SET_NULL)
-
-    def __str__(self):
-         return '{}, {}'.format(self.name, self.product_id)
-
-
 class Colours (models.Model):
 
     class Meta:
