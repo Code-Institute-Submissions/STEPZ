@@ -16,6 +16,19 @@ body{
     color: rgb(85, 78, 78) !important;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements form boutique ado */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 
 /*fonts */
 h1{
