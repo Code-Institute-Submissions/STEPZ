@@ -26,8 +26,8 @@
     $('.increment-qty').click(function(e) {
        e.preventDefault();
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       var currentValue = parseInt($(closestInput).val());
-       $(closestInput).val(currentValue + 1);
+       var currentValue = parseInt($(closestInput).val())+ 1;
+       $(closestInput).val(currentValue);
        var itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
     });
@@ -35,9 +35,10 @@
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
        e.preventDefault();
-       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       var currentValue = parseInt($(closestInput).val());
-       $(closestInput).val(currentValue - 1);
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0]; 
+       console.log('value', parseInt($(closestInput).val()))
+       var currentValue = parseInt($(closestInput).val())- 1;
+       $(closestInput).val(currentValue);
        var itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
     });
