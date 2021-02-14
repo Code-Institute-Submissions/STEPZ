@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page_header %}
-
-{% endblock %}
+{% load bag_tools %}
 
 {% block content %}
 
@@ -85,6 +82,9 @@
                             <a class="update-link text-info"><small>Update</small></a>
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                         </td>
+                         <td class="py-3">
+                                    <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity}}</p>
+                                </td>
                     </tr>
                     {% endfor %}
                     <tr>
