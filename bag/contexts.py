@@ -22,7 +22,7 @@ def bag_contents(request):
         })
 
     if total > 0:
-        delivery = total
+        delivery = total * Decimal(settings.STANDARD_DELIVERY/100)
     else:
         delivery = 0
 
@@ -32,8 +32,10 @@ def bag_contents(request):
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
+        'delivery_cost': settings.STANDARD_DELIVERY,
         'delivery': delivery,
         'grand_total': grand_total,
+
     }
 
     return context
