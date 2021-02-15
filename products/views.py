@@ -11,7 +11,12 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-
+  
+    if 'price' in request.GET:
+        filter_price = int(request.GET['price'])
+        print(filter_price)
+        filter_products = products.filter(price__gte=filter_price)
+        products = filter_products
 
     if 'categories' in request.GET:
         categories = request.GET['categories'].split(',')
