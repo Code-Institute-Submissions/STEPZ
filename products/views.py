@@ -11,7 +11,13 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-  
+
+    if 'colour' in request.GET:
+        filter_colour = request.GET['colour']
+        print(filter_colour)
+        filter_products = products.filter(colour__icontains=filter_colour)
+        products = filter_products
+
     if 'price' in request.GET:
         filter_price = int(request.GET['price'])
         print(filter_price)
