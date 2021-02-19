@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <p class="wishlist-button">
-                                   <a href=""><i class="fas fa-heart"></i></a>
+                                   {% include 'wishlist/wishlist_form.html' %}
                                 </p>
                                 <p>
                                     {% if request.user.is_superuser %}
