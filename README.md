@@ -44,3 +44,11 @@ Future goals is eexisting users of the site would also be able to sell shoes fro
 6. Shopper should be able to view order confirmamtion after checkout.
 7. Shopper should recieve order confirmation email.
 
++ Admin
+
+1. As Admin i want to be able to add new products to shop.
+2. As Admin i want the ablity to edit product fields such as price and descriptions.
+3. As Admin i wan to be able to delet products completly from the store.
+
+
+
