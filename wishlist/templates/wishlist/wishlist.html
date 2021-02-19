@@ -14,6 +14,51 @@
             <hr>
         </div>
     </div>
+     <div class="row">
+        <div class="col">
+            {% if bag_items %}
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    {% for item in bag_items %}
+                    <tr>
+                        <td class="p-3 w-25">
+                            {% if item.product.image %}
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
+                            {% else %}
+                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{item.product.name}}">
+                            {% endif %}
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3">
+                            <form class="form update-form" action="" method="">
+                                {% csrf_token %}
+                                <div class="form-row">
+                                </div>
+                            </form>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </div>
+            {% else %}
+            <p class="lead mb-5">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            {% endif %}
+        </div>
 
 </div>
 {% endblock %}
