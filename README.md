@@ -28,3 +28,9 @@ Future goals is eexisting users of the site would also be able to sell shoes fro
 4. User, profile should contain, user order history and order confrimation,
 5. Usher should be able to to view personalised wishlist
 6. User passwrd should be easily recovered or reset when lost.
+
++ Filter and Searching
+
+1. Shopper should be able to search by using the search bar.
+2. shpper should be able to  filter trainer by brand, colour and price of choice.
+
