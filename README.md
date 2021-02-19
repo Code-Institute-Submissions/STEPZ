@@ -34,3 +34,13 @@ Future goals is eexisting users of the site would also be able to sell shoes fro
 1. Shopper should be able to search by using the search bar.
 2. shpper should be able to  filter trainer by brand, colour and price of choice.
 
++ Purchasing and Checkout
+
+1. Shoppers should be to select product quantity when adding to adding to bag.
+2. Shoppers should be able to view content in bag, and the total cost of purchase.
+3. Shoppers should have the abilty to to remove items from bag.
+4. Shoppers should be able to update bag by reducing and increasing quantity of items in bag.
+5. Shoppers should be secure entring their payment details to purchase items.
+6. Shopper should be able to view order confirmamtion after checkout.
+7. Shopper should recieve order confirmation email.
+
