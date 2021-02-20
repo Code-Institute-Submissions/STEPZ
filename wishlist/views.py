@@ -40,5 +40,20 @@ def add_to_wishlist(request, product_id):
     return render(request, 'wishlist/wishlist.html', context)
 
 
+def delete_wishlist(request, product_id):
+
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist = get_object_or_404(UserWishlist, user=user)
+    delete_products = wishlist.products.get(pk=product_id)
+    delete_products.delete()
+    print(wishlist.products.all())
+
+    context = {
+        'user': user,
+        'wishlist': wishlist,
+        'wishlist_items': wishlist.products.all(),
+    }
+
+    return render(request, 'wishlist/wishlist.html', context)
 
 
