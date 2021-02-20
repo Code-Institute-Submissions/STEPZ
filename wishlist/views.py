@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
-from .models import Wishlist, WishItems, UserWishlist
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import UserWishlist
 from profiles.models import UserProfile
 
 from products.models import Product
