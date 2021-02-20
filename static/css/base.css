@@ -30,6 +30,19 @@ body{
 }
 
 
+/*products page */
+
+.product-image{
+    padding-bottom: 20px;
+
+}
+
+.product-name{
+    font-family:Roboto,sans-serif;
+    padding-top: 10px;
+
+
+}
 /*fonts */
 h1{
     font-family:Roboto,sans-serif;
