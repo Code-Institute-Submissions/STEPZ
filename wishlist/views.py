@@ -1,6 +1,8 @@
-from django.shortcuts import render, get_list_or_404, get_object_or_404
-from .models import Wishlist, WishItems
+from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
+from .models import Wishlist, WishItems, UserWishlist
 from profiles.models import UserProfile
+
+from products.models import Product
 
 # Create your views here.
 
@@ -8,8 +10,8 @@ from profiles.models import UserProfile
 def view_wishlist(request):
     """ Added a views to show the Wishlist """
     user = get_object_or_404(UserProfile, user=request.user)
-    wishlist = get_object_or_404(Wishlist, user=user)
-    wishlist_items = get_list_or_404(WishItems, wishlist=wishlist)
+    wishlist = get_object_or_404(UserWishlist, user=user)
+    wishlist_items = wishlist.products.all()
     print(wishlist_items)
 
     context = {
@@ -19,4 +21,6 @@ def view_wishlist(request):
     }
 
     return render(request, 'wishlist/wishlist.html', context)
+
+
 
