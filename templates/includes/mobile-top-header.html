@@ -1,29 +1,36 @@
 <nav class="navbar d-lg-none fixed-top">
+<div></div>
     <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
+    <!--mobile search bar-->
+    <div class=" border-0 w-75 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <form class="form" method="GET" action="{% url 'products' %}">
+            <div class="input-group w-100">
+                <input class="form-control border border-black rounded-0" type="text" name="q"
+                    placeholder="Search our site">
+                <div class="input-group-append">
+                    <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto ">
-             <li class="list-inline-item">
-                <div class=" border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-                    <form class="form" method="GET" action="{% url 'products' %}">
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q"
-                                placeholder="Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control form-control btn btn-black border border-black rounded-0"
-                                    type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <li class="list-inline-item">
+                <a class="text-black nav-link d-block d-lg-none" href="{% url 'home' %}">
+                    <div>
+                        <div><i class="fas fa-home"></i></div>
+                        <p class="home font-weight-bold">Home</p>
+
+                    </div>
+                </a>
             </li>
             <li class="list-inline-item">
                 <a class="text-black nav-link d-block d-lg-none" href="{% url 'products' %}">
