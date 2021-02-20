@@ -44,7 +44,6 @@
                         </div>
                         <div class="">
                              <a href="{% url 'add_to_wishlist' product.id %}">wishlist</a> 
-                                {% include 'wishlist/wishlist_form.html' %}
                         </div>
 
                         {% if request.user.is_superuser %}
