@@ -23,4 +23,22 @@ def view_wishlist(request):
     return render(request, 'wishlist/wishlist.html', context)
 
 
+def add_to_wishlist(request, product_id):
+
+    product = Product.objects.get(pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
+    user_wishlist, created = UserWishlist.objects.get_or_create(user=user)
+    user_wishlist.products.add(product)
+    user_wishlist.save()
+
+    context = {
+        'user': user,
+        'wishlist': user_wishlist,
+        'wishlist_items': user_wishlist.products.all(),
+    }
+
+    return render(request, 'wishlist/wishlist.html', context)
+
+
+
 
