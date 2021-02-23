@@ -20,17 +20,18 @@ def contact_us(request):
             post.message = request.POST.get("txtMsg")
             post.save()
 
-            subject = "Tast World Snacks Contact Form"
+            subject = "STEPZ Contact Form"
             message = post.message = request.POST.get(
                 "txtMsg") + " From: " + post.full_name + " Sender's Email Address " + post.email
             from_email = "stepz@example.com"
             if subject and message and from_email:
                 try:
-                    send_mail(subject, message, from_email, ['tabita.mukoko@gmail.com'])
+                    send_mail(subject, message, from_email, ['tabzii65@gmail.com'])
                 except BadHeaderError:
                     return HttpResponse("Invalid Header Found")
                 return render(request, "contact/contact_success.html")
             return HttpResponse("Make sure all fields are entered and valid.")
         return render(request, "contact/contact_success.html")
     return render(request, "contact/contact_us.html")
+
 
