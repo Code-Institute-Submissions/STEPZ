@@ -46,6 +46,12 @@ body{
 }
 
 /*Contact_us  page */
+h5.contact-message {
+    font-size: 2rem;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
 /*fonts */
 h1{
