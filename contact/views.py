@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Contact
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse
 
 
 # Create your views here.
@@ -26,7 +26,7 @@ def contact_us(request):
             from_email = "stepz@example.com"
             if subject and message and from_email:
                 try:
-                    send_mail(subject, message, from_email, ['tabzii65@gmail.com'])
+                    send_mail(subject, message, from_email, ['tabita.mukoko@gmail.com'])
                 except BadHeaderError:
                     return HttpResponse("Invalid Header Found")
                 return render(request, "contact/contact_success.html")
