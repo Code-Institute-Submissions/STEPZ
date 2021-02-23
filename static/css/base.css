@@ -44,6 +44,9 @@ body{
 
 
 }
+
+/*Contact_us  page */
+
 /*fonts */
 h1{
     font-family:Roboto,sans-serif;
@@ -61,6 +64,14 @@ h2, h3{
     text-decoration-line: underline;
     text-align: center;
 }
+
+#send, .contact-message,.contact-title{
+    font-family:lato,sans-serif;
+    font-weight:lighter;
+    color:rgb(85, 78, 78);
+}
+
+
 
 .sidebar {
     width: 20%;
