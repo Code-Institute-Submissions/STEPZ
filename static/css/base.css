@@ -9,8 +9,8 @@ body{
 }
 
 /*---colours---*/
-.fa-shopping-bag, .fa-user, .fa-store{
- color:black;   
+.fa-shopping-bag, .fa-user, .fa-store, .fa-home{
+    color: black;
 }
 
 .text-black {
@@ -85,6 +85,11 @@ h2, h3{
 }
 
 /*----home page----*/
+
+.nav-link {
+    padding:0;
+}
+
 .home-image{
     width: 100%;
  }
@@ -107,7 +112,6 @@ a:hover {
     color: white;
     text-decoration:none;
 }
-
 
 
 /*----toasts---*/
