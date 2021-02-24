@@ -6,7 +6,6 @@ html {
 
 body{
     margin: 0;
-    padding-top: 70px;
 }
 
 .fa-shopping-bag, .fa-user, .fa-store{
@@ -205,29 +204,6 @@ a:hover {
     border-radius: 0;
 }
 
- /* fixed top navbar only on medium and up */
-@media (min-width: 768px) and (max-width: 991.98px){ 
-    
-    
-    }
-
-/* pad the top a bit when navbar is collapsed on mobile */
-@media only screen and (max-width: 600px) {
-    h2,h3{
-        font-size: 1.26rem;
-        text-align: center;
-    }
-
-    .shop-link
-     {
-    font-size:1rem;
-     }
-}
-@media  (min-width: 768px) and (max-width: 1024px) {
-    h3{
-        font-size: 2.2rem;
-    }
-}
 
 /* Allauth form formatting */
 
@@ -281,4 +257,40 @@ a:hover {
 
 .allauth-form-inner-content a {
 	color: #76cf95; /* text-info */
+}
+
+
+ /* fixed top navbar only on medium and up */
+@media (min-width: 768px) and (max-width: 991.98px){ 
+    
+    
+    }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media only screen and (max-width: 600px) {
+    h2,h3{
+        font-size: 1.26rem;
+        text-align: center;
+    }
+
+    .shop-link
+     {
+    font-size:1rem;
+     }
+
+    body{
+    padding-top: 70px;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    h3{
+        font-size: 2.2rem;
+    }
+
+    body{
+    padding-top: 70px;
+    }
+
+    
 }
