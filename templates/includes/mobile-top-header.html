@@ -1,5 +1,4 @@
-<nav class="navbar d-lg-none fixed-top p-4">
-<div></div>
+<nav class="navbar navbar-light bg-white d-lg-none fixed-top">
     <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -24,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto ">
             <li class="list-inline-item">
-                <a class="text-black nav-link d-block d-lg-none" href="{% url 'home' %}">
+                <a class=" text-black nav-link d-block d-lg-none" href="{% url 'home' %}">
                     <div>
                         <div><i class="fas fa-home"></i></div>
                         <p class="home font-weight-bold">Home</p>
@@ -32,6 +31,7 @@
                     </div>
                 </a>
             </li>
+            <div class="dropdown-divider"></div>
             <li class="list-inline-item">
                 <a class="text-black nav-link d-block d-lg-none" href="{% url 'products' %}">
                     <div>
@@ -41,6 +41,7 @@
                     </div>
                 </a>
             </li>
+            <div class="dropdown-divider"></div>
             <li class="list-inline-item dropdown">
                 <a class="text-black nav-item d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -67,6 +68,7 @@
                     {% endif %}
                 </div>
             </li>
+            <div class="dropdown-divider"></div>
             <li class="list-inline-item">
                 <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-item d-block d-lg-none"
                     href="{% url 'view_bag' %}">
