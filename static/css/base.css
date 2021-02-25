@@ -4,11 +4,15 @@ html {
     height: 100;
 }
 
-body{
-    margin: 0;
-}
+body {
+        height: calc(100vh - 116px);
+        margin: 0;
+    }
 
 /*---colours---*/
+.green-font {
+     color: #76cf95 !important;
+}
 .fa-shopping-bag, .fa-user, .fa-store, .fa-home{
     color: black;
 }

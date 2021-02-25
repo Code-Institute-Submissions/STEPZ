@@ -31,26 +31,26 @@
                             </a>
                         </div>
                         {% endif %}
-                        <div class="card-body pb-0 product-name">
-                            <h6 class="mb-0">{{ product.name }}</h6>
+                        <div class="card-body  mb-1 product-name">
+                            <h6 class="mb-1">{{ product.name }}</h6>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
-                                    <div class="col product-price">
-                                       <h5 class="lead mb-0 text-left font-weight-bold">${{ product.price }}</h5>
-                                
-                        
-                                        <div class="text-left">
-                                        <a href="{% url 'add_to_wishlist' product.id %}">wishlist</a> 
-                                        </div>
-
-                                         {% if request.user.is_superuser %}
-                                         <small class="text-left">
-                                          <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                          </small>
-                                        {% endif %}
+                                <div class="col product-price">
+                                    <h5 class="lead mb-2 text-left font-weight-bold">${{ product.price }}</h5>
+                            
+                            
+                                    <div class="text-left mb-2">
+                                        <a class="green-font" href="{% url 'add_to_wishlist' product.id %}">wishlist</a>
                                     </div>
+                            
+                                    {% if request.user.is_superuser %}
+                                    <small class="text-left mb-2 ">
+                                        <a class="green-font" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
                     </div>
