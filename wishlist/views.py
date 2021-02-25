@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from .models import UserWishlist
 from profiles.models import UserProfile
+from django.contrib import messages
 
 from products.models import Product
 

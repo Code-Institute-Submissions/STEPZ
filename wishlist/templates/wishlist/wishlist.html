@@ -45,6 +45,34 @@
                             <a  href="{% url 'delete_wishlist' product.id %}" class="remove-item text-danger float-right"
                                 id="remove_{{ product.pk }}"><small>Remove</small></a>
                         </td>
+                        <td class="">
+                        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                             <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6" selected>6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11" selected>11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+                             <div class="col-12"> <!-- submit and button to the shop -->
+                                <input type="submit" class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                        </form>
+                        </td>
                         {% endfor %}
                     </tr>
                 </table>
