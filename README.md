@@ -64,8 +64,14 @@ for the rest of the fonts. it waas to keep with theme of keeping everthing nice 
 I didn't want to many colour for my projects i wanted to keep to a total of three colours. Those colour were
 black, white and mint green. I wanted to green for my logo because it's nice a vibrant and makes the logo stand out
 whilst remaining simple. The black and white, black being the colour of the fonts and white colour of the webiste
-would balance would bring everthing together.
+would balance would bring everthing together. 
 
+### Imagery
+
+I looked at sites such as Nike adn JD to give me an idea on the type of images to use. From the looking at those site
+i decided to on what images i would use and how to lay them out. Also using ideas from boutique ado i used a pic image 
+of a pair of trainer. All my images are images of trainers just diffrent brands. I included a carousel of of trainers and 
+called it  top of the steps, the idea behind this is that those are the trainers that are trending on the site. 
 
 
 
