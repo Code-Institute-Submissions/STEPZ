@@ -5,7 +5,6 @@ html {
 }
 
 body {
-        height: calc(100vh - 116px);
         margin: 0;
     }
 
@@ -13,7 +12,13 @@ body {
 .green-font {
      color: #76cf95 !important;
 }
-.fa-shopping-bag, .fa-user, .fa-store, .fa-home{
+
+.footer {
+    background-color: #76cf95;
+}
+.fa-shopping-bag, .fa-user, .fa-store,
+.fa-home, .fa-twitter, .fa-instagram,
+.fa-facebook{
     color: black;
 }
 
