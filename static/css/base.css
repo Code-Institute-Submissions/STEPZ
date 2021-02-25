@@ -9,6 +9,39 @@ body {
     }
 
 /*---colours---*/
+#White{
+    color:whitesmoke;
+
+}
+#Grey{
+    color: grey;
+}
+#Black
+{
+    color: black;
+}
+#Green{
+    color: green;
+}
+
+#Brown{
+    color: brown;
+}
+#Purple{
+    color: purple;
+}
+#Orange{
+    color: orangered;
+}
+#Yellow{
+    color: yellow;
+}
+#Red{
+    color: red;
+}
+#Pink{
+    color: pink;
+}
 .green-font {
      color: #76cf95 !important;
 }
