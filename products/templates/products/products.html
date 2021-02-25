@@ -19,7 +19,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
                         {% if product.image %}
-                        <div class=" card-body product-image">
+                        <div class="product-image">
                             <a href="{% url 'product_detail' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
@@ -31,28 +31,28 @@
                             </a>
                         </div>
                         {% endif %}
-                        <br>
-                        <div class="card-title pb-0 product-name">
+                        <div class="card-body pb-0 product-name">
                             <h6 class="mb-0">{{ product.name }}</h6>
                         </div>
-                        <br>
-                        <div class="card-title bg-white pt-0 border-0 text-left">
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
-                                <div class="col product-price">
-                                    <h5 class="lead mb-0 text-left font-weight-bold">${{ product.price }}</h5>
-                                </div>
+                                    <div class="col product-price">
+                                       <h5 class="lead mb-0 text-left font-weight-bold">${{ product.price }}</h5>
+                                
+                        
+                                        <div class="text-left">
+                                        <a href="{% url 'add_to_wishlist' product.id %}">wishlist</a> 
+                                        </div>
+
+                                         {% if request.user.is_superuser %}
+                                         <small class="text-left">
+                                          <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                          </small>
+                                        {% endif %}
+                                    </div>
                             </div>
                         </div>
-                        <div class="">
-                             <a href="{% url 'add_to_wishlist' product.id %}">wishlist</a> 
-                        </div>
-
-                        {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                        </small>
-                        {% endif %}
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:1 %}
