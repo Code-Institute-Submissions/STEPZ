@@ -50,5 +50,29 @@ Future goals is eexisting users of the site would also be able to sell shoes fro
 2. As Admin i want the ablity to edit product fields such as price and descriptions.
 3. As Admin i wan to be able to delet products completly from the store.
 
+## Design Choices
+
+The goals was to keep the design for this simple and clean.
+
+### Typography
+
+I kept the fonts simple and Used lato and Roboto. I used Roboto fonts for the project logo and then used lato 
+for the rest of the fonts. it waas to keep with theme of keeping everthing nice and simple. 
+
+### Colours 
+
+I didn't want to many colour for my projects i wanted to keep to a total of three colours. Those colour were
+black, white and mint green. I wanted to green for my logo because it's nice a vibrant and makes the logo stand out
+whilst remaining simple. The black and white, black being the colour of the fonts and white colour of the webiste
+would balance would bring everthing together.
+
+
+
+
+
+
+
+
+
 
 
