@@ -43,6 +43,9 @@ body{
     padding-top: 10px;
 }
 
+.card-header{
+    background-color: #FFFFFF;
+}
 /*----Contact_us  page----*/
 h5.contact-message {
     font-size: 2rem;
