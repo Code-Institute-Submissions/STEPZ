@@ -73,6 +73,10 @@ i decided to on what images i would use and how to lay them out. Also using idea
 of a pair of trainer. All my images are images of trainers just diffrent brands. I included a carousel of of trainers and 
 called it  top of the steps, the idea behind this is that those are the trainers that are trending on the site. 
 
+## Features 
+
+This sits is composed of 7 applications, products, profiles, contact, home, bag, wishlist,checout.
+
 
 
 
