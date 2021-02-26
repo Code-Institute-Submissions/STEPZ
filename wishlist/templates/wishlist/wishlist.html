@@ -16,9 +16,8 @@
     </div>
     <div class="row">
         <div class="col">
-                     {% for product in wishlist_items %}
-                      <div class="table-responsive rounded"></div>
-                      <table class="table table-sm table-borderless">
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
                      <thead class="text-black">
                         <tr>
                             <th scope="col">Product Info</th>
@@ -26,6 +25,7 @@
                             <th scope="col">Price</th>
                         </tr>
                     </thead>
+                     {% for product in wishlist_items %}
                      <tr> 
                         {% if product.image %}
                         <td class="p-3 w-25">
@@ -40,10 +40,6 @@
                         </td>
                         <td class="py-3">
                             <p class="my-0">${{ product.price }}</p>
-                        </td>
-                         <td class="py-3">
-                            <a  href="{% url 'delete_wishlist' product.id %}" class="remove-item text-danger float-right"
-                                id="remove_{{ product.pk }}"><small>Remove</small></a>
                         </td>
                         <td class="">
                         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
@@ -65,17 +61,25 @@
                                     <option value="14">14</option>
                                     <option value="15">15</option>
                                 </select>
-                                 <input class="form-control form-control-sm qty_input" type="number" name="quantity"
+                                <br>
+                                 <input class="quantity button form-control form-control-sm qty_input" type="number" name="quantity"
                                                     value="1" min="1" max="99" data-item_id="{{ item.item_id }}"
                                                     id="id_qty_{{ item.item_id }}">
                             </div>
 
                              <div class="col-12"> <!-- submit and button to the shop -->
-                                <input type="submit" class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-small btn-outline-black rounded-0 text-uppercase mt-3" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                         </form>
+                        <div>
+                          
+                            <a  href="{% url 'delete_wishlist' product.id %}" class="remove-item text-danger float-left"
+                                id="remove_{{ product.pk }}"><small>Remove</small></a>
+                        
+                        </div>
+                        
                         </td>
                         {% endfor %}
                     </tr>
