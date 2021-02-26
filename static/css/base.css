@@ -320,6 +320,12 @@ input.quantity {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (max-width: 600px) {
+
+    .update-button, .removebutton {
+    font-size: 50%;
+    font-weight: 400;
+}
+
     h2,h3{
         font-size: 1.26rem;
         text-align: center;
@@ -364,6 +370,11 @@ input.quantity {
 }
 
 @media  (min-width: 768px) and (max-width: 1024px) {
+
+.update-button, .removebutton {
+    font-size: 60%;
+    font-weight: 400;
+}
 
     .btn {
    
