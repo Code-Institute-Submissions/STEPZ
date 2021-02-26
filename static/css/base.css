@@ -345,13 +345,14 @@ small {
 /*--Responsive on Landscape phones----*/
 @media only screen and (max-width: 800px) {
 
+    .btn {
+   
+   
+    font-size: 0.4rem;
+  
+}
 
     
-    small {
-    font-size: 100%;
-    font-weight: 400;
-    padding-right: 60px;
-}
     .sidebar {
     padding: 10px;
     float: none;
@@ -364,6 +365,12 @@ small {
 
 @media  (min-width: 768px) and (max-width: 1024px) {
 
+    .btn {
+   
+   
+    font-size: 0.5rem;
+  
+}
 
     small {
 
