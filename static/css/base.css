@@ -157,11 +157,11 @@ a:hover {
 
 /*----wishlist---*/
 
-input#id_qty_ {
+input.quantity {
     width: 50%;
 }
 
-small {
+.remove-button {
     font-size: 100%;
     font-weight: 400;
     padding-right: 60px;
@@ -372,7 +372,7 @@ small {
   
 }
 
-    small {
+    .removed-button{
 
     padding-right: 250px;
 }
