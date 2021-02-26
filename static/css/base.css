@@ -6,6 +6,7 @@ html {
 
 body {
         margin: 0;
+        font-family:lato,sans-serif;
     }
 
 /*---colours---*/
@@ -351,8 +352,8 @@ input.quantity {
 /*--Responsive on Landscape phones----*/
 @media only screen and (max-width: 800px) {
 
-    .btn {
-   
+
+    .bag-button {
    
     font-size: 0.4rem;
   
@@ -376,7 +377,7 @@ input.quantity {
     font-weight: 400;
 }
 
-    .btn {
+    .bag-button {
    
    
     font-size: 0.5rem;
