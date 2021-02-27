@@ -90,9 +90,20 @@ view your profile or wishlist if you're signed in.
 
 ### Product Page 
 
-The Product page shows all the product for sale on the website. The page includes a filter that allows you to filter items by
+The Product page shows all the product for sale on the website.They include their names and price. The page includes a filter that allows you to filter items by
 colour, price and brand making navigation thought the product page easier. If you're signed you can add desired products to
 to your wishlist and if you're a super user you able to delete and edit the products.
+
+### Product Detail Page
+The product detail page consists of all the details the shoppers need to know about the Product. They include the name,
+price descriptions of the shoes, colours and add to bag button.
+The page also allows you to choose the size and the number of shoes you want to add to the bag
+
+### Shopping Bag 
+
+The shopping bag page stores the shoppers' products. It also allows you to adjust the quantity with the quantity and update button. 
+The shopper can remove the item from the bag with the remove button. There are keep shopping and the secure checkout button to either
+send the customer back to the products page or continue shopping
 
 
 
