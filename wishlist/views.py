@@ -26,6 +26,10 @@ def view_wishlist(request):
 
 def add_to_wishlist(request, product_id):
 
+    if not request.user.is_authenticated:
+        messages.error(request, 'Sorry, only registered users can do that.')
+        return redirect(reverse('home'))
+
     product = Product.objects.get(pk=product_id)
     user = get_object_or_404(UserProfile, user=request.user)
     user_wishlist, created = UserWishlist.objects.get_or_create(user=user)
