@@ -149,6 +149,37 @@ Forgot password: Forgot password page is accessible from Sign In page. Users wil
 
 
 
+## Features left to Implement
+
+There are quite a few features I'd like to implement after I've gotten a better understanding of how to use Django.
+Although I mostly used the features shown to me by boutique ado. I'd like to turn this into a platform where users can also 
+sell their Trainer, whether they are custom trainer they made themselves or shoes they've bought similar to Depop.
+
+
+## Allow Users to Sell products
+
+I want users that are registered to be able to sell their products own on the website.
+
+
+### Message app 
+
+I want to add a messaging app where the user can privately message each other. This will go along well  with 
+the feature of allowing users to sell items themselves they need to able to communicate.
+
+### Add a Rating system
+
+I won't allow users to be able to rate items they've bought to their satisfaction. If other users are also selling
+products, I want users to rate their items. Then the rating is assigned to said users. This allows users to identify
+those they sell good products.
+
+### Social Account Login
+
+Want users to be able to use their social account to register to the site. which would increase the number of users on the site 
+as it is quicker than adding your details.
+
+
+
+
 
 
 
