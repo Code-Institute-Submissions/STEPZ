@@ -99,11 +99,30 @@ The product detail page consists of all the details the shoppers need to know ab
 price descriptions of the shoes, colours and add to bag button.
 The page also allows you to choose the size and the number of shoes you want to add to the bag
 
+
+
+
 ### Shopping Bag 
 
 The shopping bag page stores the shoppers' products. It also allows you to adjust the quantity with the quantity and update button. 
 The shopper can remove the item from the bag with the remove button. There are keep shopping and the secure checkout button to either
 send the customer back to the products page or continue shopping
+
+### Checkout Page 
+
+The checkout page allows you to fill in the information needed to secure checkout and purchase your items. Customers can save their
+delivery information the next time they're filled in automatically. Customer can also see their order summary on the side.
+Customers don't need to be registered to be able to checkout.   A message is displayed asking if you'd like to sign up.
+
+### checkout Success Page 
+
+Customers are directed to the customer checkout success page. Where they can view their order details. 
+They are given the options to keep shopping and go back to the products page.
+### Wishlist Page
+
+Customer can save products on a wishlist page for later on.  The customer can choose the shoe size of
+the product and the amount they went and send the product to the shopping bag. They are
+given the options to remove items from their wishlist.
 
 
 
