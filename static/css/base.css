@@ -88,6 +88,14 @@ body {
 .card-header{
     background-color: #FFFFFF;
 }
+
+.btn-link:hover,
+.filter-choice{
+    font-size: 1.15rem;
+    text-decoration: none;
+
+}
+
 /*----Contact_us  page----*/
 h5.contact-message {
     font-size: 2rem;
