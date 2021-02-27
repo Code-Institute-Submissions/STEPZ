@@ -75,7 +75,25 @@ called it  top of the steps, the idea behind this is that those are the trainers
 
 ## Features 
 
-This sits is composed of 7 applications, products, profiles, contact, home, bag, wishlist,checout.
+This site is composed of 7 applications, products, profiles, contact, home, bag, wishlist,checout.
+
+### Landing Page 
+
+the landing page is composed of a Navbar,small summary of what the website is about, and Carousel.
+The carousel is t shows case trending shoes on the website. Then landing page is kept simple with minimal information.
+
+### Navbar
+
+The Navbar consists of the a search bar, website logo, shop,bag, and account icon links. The search bar allows you to Search
+products that you maybe interested, using product namesor discriptions. The account dropdown allows you to register, log in, log out,
+view your profile or wishlist if you're signed in.
+
+### Product Page 
+
+The Product page shows all the product for sale on the website. The page includes a filter that allows you to filter items by
+colour, price and brand making navigation thought the product page easier. If you're signed you can add desired products to
+to your wishlist and if you're a super user you able to delete and edit the products.
+
 
 
 
