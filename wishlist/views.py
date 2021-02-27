@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import UserWishlist
 from profiles.models import UserProfile
 from django.contrib import messages
@@ -52,8 +52,6 @@ def delete_wishlist(request, product_id):
     product_to_delete = Product.objects.get(pk=product_id)
     wishlist.products.remove(product_to_delete)
     wishlist.save()
-   # delete_products.delete()
-    print(wishlist.products.all())
 
     context = {
         'user': user,
@@ -62,5 +60,4 @@ def delete_wishlist(request, product_id):
     }
 
     return render(request, 'wishlist/wishlist.html', context)
-
 
