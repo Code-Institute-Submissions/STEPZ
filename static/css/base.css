@@ -112,6 +112,15 @@ h1{
     font-size: 3.5rem;
 }
 
+.stepz{
+
+    font-family:Roboto,sans-serif;
+    font-weight: bold;
+    color: #76cf95;
+    font-size: 2rem;
+
+}
+
 h2, h3{
     font-family:lato,sans-serif;
     font-weight: lighter;
