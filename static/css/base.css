@@ -9,6 +9,7 @@ body {
         font-family:lato,sans-serif;
     }
 
+
 /*---colours---*/
 #White{
     color:whitesmoke;
@@ -74,36 +75,6 @@ body {
 }
 
 
-/*----products page---*/
-
-.product-image{
-    padding-bottom: 20px;
-}
-
-.product-name{
-    font-family:Roboto,sans-serif;
-    padding-top: 10px;
-}
-
-.card-header{
-    background-color: #FFFFFF;
-}
-
-.btn-link:hover,
-.filter-choice{
-    font-size: 1.15rem;
-    text-decoration: none;
-
-}
-
-/*----Contact_us  page----*/
-h5.contact-message {
-    font-size: 2rem;
-    padding: 10px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
 /*----fonts---*/
 h1{
     font-family:Roboto,sans-serif;
@@ -136,12 +107,46 @@ h2, h3{
     color:rgb(85, 78, 78);
 }
 
+
+/*----products page---*/
+
+.product-image{
+    padding-bottom: 20px;
+}
+
+.product-name{
+    font-family:Roboto,sans-serif;
+    padding-top: 10px;
+}
+
+.card-header{
+
+    background-color: #FFFFFF;
+}
+
+.btn-link:hover,
+.filter-choice{
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+
+
 .sidebar {
     width: 20%;
     padding: 10px;
     margin: 0;
     float: left
 }
+
+
+/*----Contact_us  page----*/
+h5.contact-message {
+    font-size: 2rem;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 
 /*----home page----*/
 
@@ -172,6 +177,7 @@ a:hover {
     text-decoration:none;
 }
 
+
 /*----wishlist---*/
 
 input.quantity {
@@ -183,6 +189,7 @@ input.quantity {
     font-weight: 400;
     padding-right: 60px;
 }
+
 
 /*----toasts---*/
 .message-container {
@@ -200,6 +207,7 @@ input.quantity {
     height: 2px;
 }
 
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -211,6 +219,7 @@ input.quantity {
     top: -10px;
     right: 36px;
 }
+
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
@@ -250,6 +259,7 @@ input.quantity {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 
 /* Product Form */
 
@@ -335,6 +345,7 @@ input.quantity {
 }
 
 
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (max-width: 600px) {
 
@@ -364,6 +375,7 @@ input.quantity {
     width: auto;
 }
 }
+
 
 /*--Responsive on Landscape phones----*/
 @media only screen and (max-width: 800px) {
