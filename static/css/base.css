@@ -47,7 +47,7 @@ body {
      color: #76cf95 !important;
 }
 
-.footer {
+.card-footer {
     background-color: #76cf95;
 }
 .fa-shopping-bag, .fa-user, .fa-store,
@@ -118,7 +118,6 @@ h2, h3{
     color:rgb(85, 78, 78);
     font-size: 3rem;
     padding: 40px;
-    text-decoration-line: underline;
     text-align: center;
 }
 
