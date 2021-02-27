@@ -99,7 +99,11 @@ The product detail page consists of all the details the shoppers need to know ab
 price descriptions of the shoes, colours and add to bag button.
 The page also allows you to choose the size and the number of shoes you want to add to the bag
 
+### Wishlist Page
 
+Customer can save products on a wishlist page for later on.  The customer can choose the shoe size of
+the product and the amount they went and send the product to the shopping bag. They are
+given the options to remove items from their wishlist.
 
 
 ### Shopping Bag 
@@ -118,12 +122,30 @@ Customers don't need to be registered to be able to checkout.   A message is dis
 
 Customers are directed to the customer checkout success page. Where they can view their order details. 
 They are given the options to keep shopping and go back to the products page.
-### Wishlist Page
 
-Customer can save products on a wishlist page for later on.  The customer can choose the shoe size of
-the product and the amount they went and send the product to the shopping bag. They are
-given the options to remove items from their wishlist.
+### Profile Page 
 
+The Profile page contains the customer's details and order history. The customer can update their order details for future
+reference. You can only access the My profile page if you are registered.
+
+
+### Contact Us page 
+
+The contact us page allows the customer to send the website a message they would like to ask any questions. 
+You are then taken to the contact success page where you are given the options to go back to the home page.
+
+### Admin Product Management
+
+This page is only available to superusers. It allows you to add, delete and edit products of your choice.
+
+### Django-allauth features
+Base template for allauth has Back to Home button at the end of the page, for easy navigation for users.
+Sign Up: The users will be asked to fill out E-mail, User Name and Password to create an account. When the sign up form is submitted, a verification email will be sent to the user's
+email address to complete the sign up process.
+Log In: Users will be asked to input User Name or Email, and Password to login. If the user successfully logged in, a success message will pop up and redirect to the landing page.
+Log out: Log out page is accessible from the site menu. After the user successfully signed out button on the sign out page, a success message will appear and redirect to the landing page.
+Forgot password: Forgot password page is accessible from Sign In page. Users will be asked to put in an email address which they have used for their registration to the site. An email with a link to reset the password will be sent after submitting the form.
+@https://github.com/AsunaMasuda/FloweryDays
 
 
 
