@@ -45,8 +45,10 @@ def delete_wishlist(request, product_id):
 
     user = get_object_or_404(UserProfile, user=request.user)
     wishlist = get_object_or_404(UserWishlist, user=user)
-    delete_products = wishlist.products.get(pk=product_id)
-    delete_products.delete()
+    product_to_delete = Product.objects.get(pk=product_id)
+    wishlist.products.remove(product_to_delete)
+    wishlist.save()
+   # delete_products.delete()
     print(wishlist.products.all())
 
     context = {
