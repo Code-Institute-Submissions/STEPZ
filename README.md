@@ -1,6 +1,42 @@
+
+## Table of Contents
+1. [**UX**](#ux)
+2. [**Wireframes**](#wireframes)
+3. [**Project Goals**](#project-goals )
+4. [**User stories**](#user-stories)
+5. [**Design Choices**](#design-choices)
+6. [**Typography**](#typography)
+7. [**Colours**](#colours)
+8. [**Imagery**](#imagery)
+9. [**Features**](features)
+10. [**Landing Page**](#landing-page)
+11. [**Navbar**](#navabr)
+12. [**Product Page**](#product-page)
+13. [**Product Detail Page**](product-detail-page)
+14. [**Wishlist Page**](#wishlist-page)
+15. [**Shopping Bag Page**](#shopping-page)
+16. [**Checkout Page**](#checkout-page)
+17. [**Checkout Success Page**](#checkout-success-page)
+18. [**Profile Page**](#profile-page)
+19. [**Contact Us Page**](#contact-us-page)
+20. [**Admin Product Management**](#admin-product-management)
+21. [**Django-allauth features**](#django-allauth-features)
+22. [**Features left to Implement**](#general-testing)
+23. [**Testing**](#testing)
+24. [**Functionality**](#functionality)
+25. [**Issues**](#technologies-used)
+27. [**Technologies Use**](#technologies-used)
+28. [**Deployoment**](#deployoment )
+29. [**Credits**](#credits)
+
+
 # UX
 
-## Project goals
+### Wireframes
+Please view my wireframes here [here](Wireframes/stepzapp-wireframes.pdf) 
+
+
+## Project Goals
 
 + Main goal  is for people to be able to find and buy popular aswell as custome made trainers
 + Easy navigation and use of the website on any device 
@@ -118,7 +154,7 @@ The checkout page allows you to fill in the information needed to secure checkou
 delivery information the next time they're filled in automatically. Customer can also see their order summary on the side.
 Customers don't need to be registered to be able to checkout.   A message is displayed asking if you'd like to sign up.
 
-### checkout Success Page 
+### Checkout Success Page 
 
 Customers are directed to the customer checkout success page. Where they can view their order details. 
 They are given the options to keep shopping and go back to the products page.
@@ -288,7 +324,7 @@ with help of tutor support and my mentor, I began to get a better understanding.
 1. [SQlite3](https://www.sqlite.org/index.html)- database used for development.
 3.  [PostgreSQL](https://www.postgresql.org/) - database used for production.
 
-## Deplyoment 
+## Deployoment 
 
 ### Heroku Deployment with AWS
 This website is deployed on [Heroku](https://www.heroku.com/), following these steps:
