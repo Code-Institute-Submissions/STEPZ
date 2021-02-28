@@ -364,11 +364,6 @@ input.quantity {
     font-size:1rem;
      }
 
-    body{
-    padding-top: 70px;
-   
-    }
-
     .sidebar {
     padding: 10px;
     float: none;
@@ -420,9 +415,6 @@ input.quantity {
         font-size: 2.2rem;
     }
 
-    body{
-    padding-top: 70px;
-    }
     
 }
 
