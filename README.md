@@ -440,7 +440,7 @@ if 'USE_AWS' in os.environ:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 ```
-5. Add [custom_storages.py](https://github.com/AsunaMasuda/FloweryDays/blob/master/custom_storages.py).
+5. Add [custom_storages.py]
 6. Delete DISABLE_COLLECTSTATIC from Heroku Config Var.
 7. Push all the changes to Github/Heroku and all the static files will be uploaded to S3 bucket.
 By setting up above, Heroku will run python3 manage.py collectstatic during the build process and look for static and media files.
