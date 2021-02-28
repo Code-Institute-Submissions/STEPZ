@@ -439,3 +439,18 @@ os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH Secret Key>"
 7. Now you can access the app using the command `python3 manage.py runserver`
 @https://github.com/AsunaMasuda/FloweryDays#heroku-deployment-with-aws
 
+## Credits
+
+### content
+
+* README, website code examples and deploying instruction taken from https://github.com/AsunaMasuda/FloweryDays and 
+ https://github.com/ceciliabinck/taste-world-snacks 
+ and Code on Boutique-Ado project
+
+### Acknowledgement
+
+I would like to thank :
+The tutors at code institute for their help
+My mentor Antonio Rodriguez
+
+
