@@ -18,16 +18,15 @@
         <div class="col">
             <div class="table-responsive rounded">
                 <table class="table table-sm table-borderless">
-                     {% for product in wishlist_items %}
-                     <tr> 
+                    {% for product in wishlist_items %}
+                    <tr>
                         {% if product.image %}
                         <td class="p-3 w-25">
-                            <img class="img-fluid rounded" src="{{ product.image.url }}"
-                                alt="{{product.name}}">
-                        {% else %}
+                            <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{product.name}}">
+                            {% else %}
                             <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{product.name}}">
                         </td>
-                         {% endif %}
+                        {% endif %}
                         <td class="py-3">
                             <p class="my-0"><strong>{{ product.name }}</strong></p>
                             <br>
@@ -35,50 +34,55 @@
 
                         </td>
                         <td class="py-3">
-                        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                             <div class="col-12">
-                                <p><strong>Size:</strong></p>
-                                <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6" selected>6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11" selected>11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                </select>
-                                <br>
-                                 <input class="quantity button form-control form-control-sm qty_input" type="number" name="quantity"
-                                                    value="1" min="1" max="99" data-item_id="{{ item.item_id }}"
-                                                    id="id_qty_{{ item.item_id }}">
+                            <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                                {% csrf_token %}
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <p><strong>Size:</strong></p>
+                                        <select class="form-control rounded-0 w-50" name="product_size"
+                                            id="id_product_size">
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6" selected>6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11" selected>11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                        </select>
+                                        <br>
+                                        <input class="quantity button form-control form-control-sm qty_input"
+                                            type="number" name="quantity" value="1" min="1" max="99"
+                                            data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <!-- submit and button to the shop -->
+                                        <input type="submit"
+                                            class="btn bag-button btn-small btn-outline-black rounded-0 text-uppercase mt-2"
+                                            value="Add to Bag">
+                                    </div>
+                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                </div>
+                            </form>
+                            <div>
+
+                                <a href="{% url 'delete_wishlist' product.id %}"
+                                    class="remove-item text-danger float-left" id="remove_{{ product.pk }}"><small
+                                        class="remove-button">Remove</small></a>
+
                             </div>
 
-                             <div class="col-12"> <!-- submit and button to the shop -->
-                                <input type="submit" class="btn bag-button btn-small btn-outline-black rounded-0 text-uppercase mt-2" value="Add to Bag">
-                            </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        </div>
-                        </form>
-                        <div>
-                          
-                            <a  href="{% url 'delete_wishlist' product.id %}" class="remove-item text-danger float-left"
-                                id="remove_{{ product.pk }}"><small class="remove-button">Remove</small></a>
-                        
-                        </div>
-                        
                         </td>
                         {% endfor %}
                     </tr>
                 </table>
             </div>
-             <a href="{% url 'products' %}" class=" mb-3 btn btn-outline-black rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class=" mb-3 btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
@@ -87,4 +91,4 @@
         </div>
     </div>
 
-{% endblock %}
+    {% endblock %}
