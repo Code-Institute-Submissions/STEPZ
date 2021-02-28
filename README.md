@@ -282,6 +282,45 @@ with help of tutor support and my mentor, I began to get a better understanding.
 @https://github.com/ceciliabinck/taste-world-snacks#setting-up-the-database-and-heroku-app
 
 
+### Deploying to Heroku
+
+In settings.py go back to the database section. You're going to going to set your database default in an if statement, if 'DATABASE_URL' in os.environ:. So that when our app is running on Heroku we connect to Postgres otherwise we connect to your local database. The first part of this if statement is going to be the default database for when connected to Heroku and it will be similar to the default database code you just removed but with your Heroku URL secured
+
+  DATABASE = {
+      'default': dj_database_url.parse(os.environ.get('DATABASE_URL))
+  }
+Put the original database default in an else statement
+
+else:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+To be able to deploy to Heroku you need a couple of other things:
+
+Install gunicor, that will act as a web server, and freeze this in the requirments.txt
+
+Create a Procfile, it needs the capital P. To tell Heroku to create a web dyno, which will run gunicorn and serve our Django app. You open a new file and add this to the file. web: gunicorn taste_world_snacks.wsgi:application
+
+Login to Heroku in the console. To log in, you can use the command Heroku login or Heroku login -i and follow the steps. Then temporarily disable collective static by using the command Heroku config: set DISABLE_COLLECTSTATIC=1 --app taste-world-snacks, so that Heroku won't try to collect static files when we deploy.
+
+You need to add taste-world-snacks to allowed hosts in settings.py and add the localhost as well, so that you can still work on it. I tidied up secured later so I could test automatic deployment. Then add, commit and push to Github.
+
+To deploy to Heroku using the commands:
+
+heroku git:remove -a stepz
+git push heroku master
+To set up automatic deployment go to the deploy tab on Heroku and click on connect to Github. Search for the correct repository and then click connect, after that go to the Enable Automatic Deploys button and click it.
+
+Then to add secure, look up a secret key generator and generate a secret key. Copy that and go to the settings tab in Heroku, reveal config vars to make a new key with the name SECRET_KEY and past in your generated secret key in the value field and add it. After that go settings.py to replays the SECRET_KEY value with a call to get it from the environment with an empty string as default, SECRET_KEY = os.environ.get('SECRET_KEY', '').
+
+Set DEBUG to be true only if there is a variable called development, DEBUG = 'DEVELOPMENT' in os.environ. Lastly add, commit and push to Github. If you go to the activity tab on Heroku, you can see there is a build-in progress and that your automatic deployment is working.
+
+Store static files and images on AWS
+@https://github.com/ceciliabinck/taste-world-snacks#deploying-to-heroku
 
 
 
