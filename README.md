@@ -246,6 +246,21 @@ they should be able to update and remove the items if they choose. They also hav
 - Tested by creating an account to send a confirmation and had to verify the account. Then it was easy to sign in afterwards.
 - Passed all tests.
 
+## Issues
+
+- In the beginning, when creating some of my models I accidentally delete my migration and had to start my whole project again
+luckily I hadn't done much.
+- Issues with my wishlist, when creating my wishlist I complication how my wishlist my having to models and confusing myself on how to create the relationship between my wishlist and products. I solved this issue by reading up on many to many 
+relationship and with the help of my tutor, I was able to simplify my model and crated my wishlist app.
+- The update and remove button weren't working in the beginning when the javascript id was placed in the buttons class.When I moved 
+them the icon class and id they started working.
+- when at first I didn't want to go with the free delivery threshold, however, I couldn't figure out how to make my grand total and 
+the delivery total appears so I just followed the boutique ado tutorial to fix it.
+- There's still an issue with the footer floating but I am unsure on how to fix it as of right now.
+- most of my issues had to do with my not understanding how the models and their fields were supposed to go together, but in the end 
+with help of tutor support and my mentor, I began to get a better understanding. 
+
+
 
 
 
