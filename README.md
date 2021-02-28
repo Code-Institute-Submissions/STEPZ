@@ -260,75 +260,31 @@ the delivery total appears so I just followed the boutique ado tutorial to fix i
 - most of my issues had to do with my not understanding how the models and their fields were supposed to go together, but in the end 
 with help of tutor support and my mentor, I began to get a better understanding. 
 
-## Deployment 
+## Technologies Used
 
-### Setting up the database and Heroku app
+### Libraries and Packages
 
-- Go heroku.com, create an account or log in.
+1. HTML, CSS and Javascript Progamming languages 
+2. [Django](https://www.djangoproject.com/)
+3. [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+4. [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+5. [Bootstrap (v4.4.1)](https://www.bootstrapcdn.com/)
+6. [JQuery](https://jquery.com/)
+7. [JQuery-UI](https://jqueryui.com/)
+8. [Popper.js](https://popper.js.org/)
+9. [Font Awesome](https://fontawesome.com/)
+10. [Animate.css](https://animate.style/)
+11. [Wow.js](https://www.delac.io/wow/)
+12. [Stripe](https://stripe.com/ie)
+13. [Google Fonts](https://fonts.google.com/)
 
-- Click on new and then on new app. Give your app a name. Then choose the region closest to you and lastly click on create app button.
+### Git/GitHub
+1. Gitpod
+2. [PIP](https://pip.pypa.io/en/stable/installing/)
+3. [Django Debug Toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
+4. [dbdiagram.io](https://dbdiagram.io/home)
+5. [AWS S3 bucket](https://aws.amazon.com/)
 
-- Go to the resources tab, go to the add-ons and search for Heroku Postgres. Use the free plan and click on the submit order form button.
-
-- Go back to your code editor and install dj_database_url and psycopg2-binary , for the use of heroku Postgres. pip3 install dj_database_url and pip3 install psycopg2-binary. After that freeze the requirements, pip3 freeze > requirementstxt.
-
-- Go to settings.py and import dj_database_url. Go to the database settings section and comment out the the default configuration and add a new database default with a call to dj_database_url.parse(). Go back to Heroku, go to the settings tab and reveal the config vars. Copy the database-url value and past this into the parentheses (). DATABASE = { 'default': dj_database_url.parse('here comes you database-url value') }
-
-- Because you're using Postgres, you have to run all the migrations again, you can see this when you run python3 manage.py show migrations as the boxes are no longer checked. If you used JSON files to upload your categories an products you have to load them again. If you add them manually then you have again after your app is deployed to Heroku.
-
-- Create a new superuser, python3 manage.py createsuperuser, and follow the steps. Your Heroku app and database are ready to go so remove the new database default and uncomment the original database default. You do this last step to make sure your database URL doesn't end up in version control and people can't use it for them selfs.
-
-- Then add, commit and push to Github.
-@https://github.com/ceciliabinck/taste-world-snacks#setting-up-the-database-and-heroku-app
-
-
-### Deploying to Heroku
-
-In settings.py go back to the database section. You're going to going to set your database default in an if statement, if 'DATABASE_URL' in os.environ:. So that when our app is running on Heroku we connect to Postgres otherwise we connect to your local database. The first part of this if statement is going to be the default database for when connected to Heroku and it will be similar to the default database code you just removed but with your Heroku URL secured
-
-  DATABASE = {
-      'default': dj_database_url.parse(os.environ.get('DATABASE_URL))
-  }
-Put the original database default in an else statement
-
-else:
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-To be able to deploy to Heroku you need a couple of other things:
-
-Install gunicor, that will act as a web server, and freeze this in the requirments.txt
-
-Create a Procfile, it needs the capital P. To tell Heroku to create a web dyno, which will run gunicorn and serve our Django app. You open a new file and add this to the file. web: gunicorn taste_world_snacks.wsgi:application
-
-Login to Heroku in the console. To log in, you can use the command Heroku login or Heroku login -i and follow the steps. Then temporarily disable collective static by using the command Heroku config: set DISABLE_COLLECTSTATIC=1 --app taste-world-snacks, so that Heroku won't try to collect static files when we deploy.
-
-You need to add taste-world-snacks to allowed hosts in settings.py and add the localhost as well, so that you can still work on it. I tidied up secured later so I could test automatic deployment. Then add, commit and push to Github.
-
-To deploy to Heroku using the commands:
-
-heroku git:remove -a stepz
-git push heroku master
-To set up automatic deployment go to the deploy tab on Heroku and click on connect to Github. Search for the correct repository and then click connect, after that go to the Enable Automatic Deploys button and click it.
-
-Then to add secure, look up a secret key generator and generate a secret key. Copy that and go to the settings tab in Heroku, reveal config vars to make a new key with the name SECRET_KEY and past in your generated secret key in the value field and add it. After that go settings.py to replays the SECRET_KEY value with a call to get it from the environment with an empty string as default, SECRET_KEY = os.environ.get('SECRET_KEY', '').
-
-Set DEBUG to be true only if there is a variable called development, DEBUG = 'DEVELOPMENT' in os.environ. Lastly add, commit and push to Github. If you go to the activity tab on Heroku, you can see there is a build-in progress and that your automatic deployment is working.
-
-Store static files and images on AWS
-@https://github.com/ceciliabinck/taste-world-snacks#deploying-to-heroku
-
-
-
-
-
-
-
-
-
-
-
+## Databases
+1. [SQlite3](https://www.sqlite.org/index.html)- database used for development.
+3.  [PostgreSQL](https://www.postgresql.org/) - database used for production.
