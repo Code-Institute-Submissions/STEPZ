@@ -260,6 +260,28 @@ the delivery total appears so I just followed the boutique ado tutorial to fix i
 - most of my issues had to do with my not understanding how the models and their fields were supposed to go together, but in the end 
 with help of tutor support and my mentor, I began to get a better understanding. 
 
+## Deployment 
+
+### Setting up the database and Heroku app
+
+- Go heroku.com, create an account or log in.
+
+- Click on new and then on new app. Give your app a name. Then choose the region closest to you and lastly click on create app button.
+
+- Go to the resources tab, go to the add-ons and search for Heroku Postgres. Use the free plan and click on the submit order form button.
+
+- Go back to your code editor and install dj_database_url and psycopg2-binary , for the use of heroku Postgres. pip3 install dj_database_url and pip3 install psycopg2-binary. After that freeze the requirements, pip3 freeze > requirementstxt.
+
+- Go to settings.py and import dj_database_url. Go to the database settings section and comment out the the default configuration and add a new database default with a call to dj_database_url.parse(). Go back to Heroku, go to the settings tab and reveal the config vars. Copy the database-url value and past this into the parentheses (). DATABASE = { 'default': dj_database_url.parse('here comes you database-url value') }
+
+- Because you're using Postgres, you have to run all the migrations again, you can see this when you run python3 manage.py show migrations as the boxes are no longer checked. If you used JSON files to upload your categories an products you have to load them again. If you add them manually then you have again after your app is deployed to Heroku.
+
+- Create a new superuser, python3 manage.py createsuperuser, and follow the steps. Your Heroku app and database are ready to go so remove the new database default and uncomment the original database default. You do this last step to make sure your database URL doesn't end up in version control and people can't use it for them selfs.
+
+- Then add, commit and push to Github.
+@https://github.com/ceciliabinck/taste-world-snacks#setting-up-the-database-and-heroku-app
+
+
 
 
 
