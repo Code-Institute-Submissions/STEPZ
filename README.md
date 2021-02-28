@@ -1,3 +1,6 @@
+# STEPZ
+
+Please find the application [here]https://stepzapp.herokuapp.com/
 
 ## Table of Contents
 1. [**UX**](#ux)
