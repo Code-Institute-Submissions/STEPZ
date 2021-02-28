@@ -179,6 +179,75 @@ as it is quicker than adding your details.
 
 
 
+## Testing 
+
+All Test for the app were done manually using google dev tools and also heroku when then app was deployed.
+
+### Responsivness 
+
+Testing the Respsonsive of the site was done mainly on google dev tools. the repsonsivness of the home page,, profiles and 
+contact page where good. Howevere intially the bag, wishlst and contact page all had issues with showing the products fitting on 
+one screen. I had to change the intial layout of the table to make it repsonsive on one screen.
+
+
+
+### Functionality 
+
+I tested the functionality of each page using the initial user story.
+
+#### Landing page 
+- As a Customer, I want to know what services I am being offered. Then be able to simply navigate from one page to another.
+- test conducted, clicked on all the icons, which leads to all the correct links.
+- Passed all tests in terms of functionality and easy navigation.
+
+#### Product Page
+- As a customer, I want to view products available and filter the products to suit my needs
+- test all the filters, by filter by colour and products, and brand and the products that fit the description appear.
+- Passed all filters work, customers can sort as desired.
+-  In the future, I would like to allow customers to apply more than one filter at a time.
+
+#### Product Detail Page 
+- A a customer I would like the products page to showcase all the details of the selected product. Customers should be able to select the item quantity and size then adds it to the bag.
+- Tested the functionality by adding items to the bag, selecting a different quantity of items, shoe size.
+- Passed all 
+
+#### Wishlist 
+- if the customer is authenticated they should be able to save the wishlist. They should be able to remove the item from the wishlist or add it to the bag.
+- Tested by adding things to the wishlist when signed out. This did not allow me to complete the action. When logged in I was allowed to save, remove and add items to the bag.
+- Passed all
+
+#### Shopping bag 
+- customer should be able to view inside the shopping and seeing the item selected inside with the quantity and size chosen. 
+they should be able to update and remove the items if they choose. They also have the choice to checkout.
+- test all these functionalities by completing the steps, removing and updating items in the bag.
+- Passed all
+
+
+####  Checkout Page
+- Customer should be able to enter their details, view their order summary, save their details if desired
+ and securely checkout.
+- Test this by attempting to buy something entering my details and checking out. I was taken the checkout success page
+- Passed all tests 
+
+#### Contact Page 
+
+- Customer should be able to send a  message and directed to the contact success page thanking them for their message.
+- sent a message and directed to the customer success page.
+- Passed all test 
+
+#### Profile page 
+- if  a user is authenticated they should see their order history and saved details if they have bought something and saved their details.
+- tested this buying an item so I could view order history and saving my info for later on to auto-filled.
+- Passed all tests.
+
+#### Register,Sign in page.
+- Users should be able to log in, signup easily to the website.
+- User is sent an email to verify their account. 
+- Tested by creating an account to send a confirmation and had to verify the account. Then it was easy to sign in afterwards.
+- Passed all tests.
+
+
+
 
 
 
